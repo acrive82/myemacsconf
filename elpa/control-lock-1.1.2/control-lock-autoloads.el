@@ -1,9 +1,9 @@
-;;; f-autoloads.el --- automatically extracted autoloads
+;;; control-lock-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("f.el") (23533 64739 401987 991000))
+;;;### (autoloads nil nil ("control-lock.el") (23534 446 758354 878000))
 
 ;;;***
 
@@ -12,4 +12,4 @@
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
 ;; End:
-;;; f-autoloads.el ends here
+;;; control-lock-autoloads.el ends here

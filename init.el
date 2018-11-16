@@ -148,25 +148,61 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vector
+   ["#1B2229" "#BF616A" "#A3BE8C" "#ECBE7B" "#8FA1B3" "#c678dd" "#46D9FF" "#DFDFDF"])
+ '(beacon-color "#cc6666")
+ '(beacon-mode t)
  '(coffee-tab-width 2)
- '(custom-enabled-themes (quote (doom-nord)))
+ '(custom-enabled-themes (quote (doom-spacegrey)))
  '(custom-safe-themes
    (quote
-    ("4697a2d4afca3f5ed4fdf5f715e36a6cac5c6154e105f3596b44a4874ae52c45" "fe666e5ac37c2dfcf80074e88b9252c71a22b6f5d2f566df9a7aa4f9bea55ef8" "100e7c5956d7bb3fd0eebff57fde6de8f3b9fafa056a2519f169f85199cc1c96" "f0dc4ddca147f3c7b1c7397141b888562a48d9888f1595d69572db73be99a024" "d2e9c7e31e574bf38f4b0fb927aaff20c1e5f92f72001102758005e53d77b8c9" "a3fa4abaf08cc169b61dea8f6df1bbe4123ec1d2afeb01c17e11fdc31fc66379" "6d589ac0e52375d311afaa745205abb6ccb3b21f6ba037104d71111e7e76a3fc" default)))
+    ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "93a0885d5f46d2aeac12bf6be1754faa7d5e28b27926b8aa812840fe7d0b7983" "6b2636879127bf6124ce541b1b2824800afc49c6ccd65439d6eb987dbf200c36" "7e78a1030293619094ea6ae80a7579a562068087080e01c2b8b503b27900165c" "4697a2d4afca3f5ed4fdf5f715e36a6cac5c6154e105f3596b44a4874ae52c45" "fe666e5ac37c2dfcf80074e88b9252c71a22b6f5d2f566df9a7aa4f9bea55ef8" "100e7c5956d7bb3fd0eebff57fde6de8f3b9fafa056a2519f169f85199cc1c96" "f0dc4ddca147f3c7b1c7397141b888562a48d9888f1595d69572db73be99a024" "d2e9c7e31e574bf38f4b0fb927aaff20c1e5f92f72001102758005e53d77b8c9" "a3fa4abaf08cc169b61dea8f6df1bbe4123ec1d2afeb01c17e11fdc31fc66379" "6d589ac0e52375d311afaa745205abb6ccb3b21f6ba037104d71111e7e76a3fc" default)))
+ '(fci-rule-color "#65737E")
+ '(flycheck-color-mode-line-face-to-color (quote mode-line-buffer-id))
+ '(frame-background-mode (quote dark))
+ '(global-auto-complete-mode t)
+ '(global-yascroll-bar-mode t)
  '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(jdee-db-active-breakpoint-face-colors (cons "#1B2229" "#D08770"))
+ '(jdee-db-requested-breakpoint-face-colors (cons "#1B2229" "#A3BE8C"))
+ '(jdee-db-spec-breakpoint-face-colors (cons "#1B2229" "#4f5b66"))
  '(package-selected-packages
    (quote
-    (workgroups2 markdown-preview-mode md4rd grails-projectile-mode groovy-mode fireplace mode-icons powerline-evil magit-stgit magit-annex nyan-mode nlinum spaceline-all-the-icons all-the-icons-ivy neotree doom all-the-icons-gnus all-the-icons-dired doom-themes company tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+    (control-lock wttrin speed-type spacemacs-theme pacmacs telephone-line smart-mode-line-powerline-theme which-key auto-complete yascroll beacon highlight-symbol color-theme-sanityinc-tomorrow helm fullscreen-mode restclient gradle-mode grails-projectile-mode groovy-mode fireplace mode-icons powerline-evil magit-stgit magit-annex nyan-mode nlinum spaceline-all-the-icons all-the-icons-ivy neotree doom all-the-icons-gnus all-the-icons-dired doom-themes company tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider)))
+ '(spaceline-helm-mode t)
+ '(spaceline-info-mode t)
+ '(tool-bar-mode nil)
+ '(vc-annotate-background "#2F3841")
+ '(vc-annotate-color-map
+   (list
+    (cons 20 "#A3BE8C")
+    (cons 40 "#bbbe86")
+    (cons 60 "#d3be80")
+    (cons 80 "#ECBE7B")
+    (cons 100 "#e2ab77")
+    (cons 120 "#d99973")
+    (cons 140 "#D08770")
+    (cons 160 "#cc8294")
+    (cons 180 "#c97db8")
+    (cons 200 "#c678dd")
+    (cons 220 "#c370b6")
+    (cons 240 "#c16890")
+    (cons 260 "#BF616A")
+    (cons 280 "#a35f69")
+    (cons 300 "#875e68")
+    (cons 320 "#6b5c67")
+    (cons 340 "#65737E")
+    (cons 360 "#65737E")))
+ '(vc-annotate-very-old-color nil)
+ '(which-key-idle-delay 0.8)
+ '(which-key-mode t)
+ '(yascroll:disabled-modes nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(require 'all-the-icons)
-
-(require 'spaceline-config)
-(spaceline-spacemacs-theme)
 
 
 (require 'neotree)
@@ -177,10 +213,8 @@
 (doom-themes-org-config)
 
 
-(require 'powerline)
-(powerline-evil-face)
-(require 'powerline-evil)
-(mode-icons-mode)
+(require 'telephone-line)
+(telephone-line-mode 1)
 
 (add-to-list 'load-path "~/emacs/lisp/")    ;my lisp dir
 (autoload 'todo-list-mode "todo-list-mode") ;load when needed
@@ -194,10 +228,15 @@
 ;then bind to control-f12 so i can call it with one keystroke
 ;this works well for me because i also bind calendar to f12
 (global-set-key [C-f11] 'open-todo-list)
-(set-face-attribute 'default nil :height 110)
-
-
-(require 'workgroups2)
-;; Change some settings
-(workgroups-mode 1)        ; put this one at the bottom of .emacs (init.el)
-
+(require 'gradle-mode)
+(gradle-mode 1)
+(require 'restclient)
+(beacon-mode 1)
+(global-yascroll-bar-mode 1)
+(which-key-mode)
+(setq wttrin-default-cities '("Brindisi"))
+(setq wttrin-default-accept-language '("Accept-Language" . "it-IT"))
+  ; Require the code
+  (require 'control-lock)
+  ; Make C-z turn on control lock
+  (control-lock-keys)
